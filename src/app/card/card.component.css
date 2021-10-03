@@ -1,0 +1,35 @@
+.content{
+    background-color: aliceblue !important;
+   
+}
+.margin{
+    margin-top: 10%;
+}
+
+.inputContent{
+    display: block;
+}
+.textinput{
+    width: 80%;
+}
+input[type=text] {
+    border: 1px solid grey;        
+   
+   
+  }
+  input[type=text]:focus{
+      border: none;
+    outline: none;      
+    box-shadow: 0 0 0 2px #66B266; 
+  }
+
+  input[type=button]
+  {
+      width: 15%;
+      background-color: #66B266;
+      border: none;
+  }
+  .complete{
+      font-size: 18px;
+      background-color: #66B266;
+  }

@@ -1,0 +1,50 @@
+.content{
+    background-color: aliceblue !important;
+   
+}
+.margin{
+    margin-top: 10%;
+}
+
+.inputContent{
+    display: block;
+}
+.textinput{
+    width: 80%;
+}
+input[type=text] {
+    border: 1px solid grey;        
+   
+   
+  }
+  input[type=text]:focus{
+      border: none;
+    outline: none;      
+    box-shadow: 0 0 0 2px #66B266; 
+  }
+
+  .complete{
+      font-size: 18px;
+      background-color: #66B266;
+      width: 30%;
+  }
+  button{
+    width: 15%;
+    background-color: #66B266;
+    border: none;
+  }
+  .output{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+    background: lighten(#66B266, 15%);
+    border-radius: 100% !important;
+}
+.completedtask{
+    color: gray 0.5;
+    text-decoration: line-through;
+}

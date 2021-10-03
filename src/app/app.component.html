@@ -1,0 +1,33 @@
+<div class="container-fluid">    
+    <div class="row d-flex justify-content-center margin">        
+        <div class="col-lg-6 content  ">
+            <div class="row ">    
+              
+                <form>
+                    <input #myInput type="text" name="" id="task" class="m-2 p-2 textinput" placeholder="Add a task">
+                   
+                    <button type="button" class="btn btn-success p-2 text-white m-2 fw-bold" (click)="addToList(myInput.value)">Add a task</button>  
+                </form>                     
+            </div>
+            <p *ngIf="works.length==0" class="mt-2 fw-bold">All tasks have been completed.</p>
+           
+            <div class="row text-wrap" *ngFor="let elements of works ;let i=index;">
+               <!-- <app-card [myData]="elements"></app-card>-->
+               
+               <div class="output col-lg-12 m-0"> 
+               
+                   <div class="fw-bold " [ngClass]="{'completedtask':!elements.finished}">{{elements.work}}</div>
+                    <div><input type="checkbox" name="" id="" class="radio " (click)="change(i)"></div>
+               </div> 
+              
+            </div>   
+
+            <div class="row">   
+                <button class="btn btn-success p-3 m-2 complete fw-bold" (click)="remove()">
+                        Clear Completed Task
+                </button>
+            </div>
+            
+        
+    </div>
+</div>
