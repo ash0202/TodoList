@@ -33,8 +33,9 @@ export class AppComponent {
   }
   remove()
   {
-    for(let i=0;i<this.works.length;i++)
+    for(let i=this.works.length-1;i>=0;i--)
     {
+      debugger
       if(this.works[i].finished==false)
       {  
         this.works.splice(i,1);
